@@ -1,0 +1,263 @@
+EESchema Schematic File Version 4
+LIBS:adapter-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L promicro:ProMicro U1
+U 1 1 5C97D774
+P 4350 3850
+F 0 "U1" H 4350 4887 60  0000 C CNN
+F 1 "ProMicro" H 4350 4781 60  0000 C CNN
+F 2 "promicro:ProMicro" H 4450 2800 60  0001 C CNN
+F 3 "" H 4450 2800 60  0000 C CNN
+	1    4350 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2350 4300 2350
+Text Label 3950 2350 0    50   ~ 0
+DATA
+Wire Wire Line
+	3900 2250 4300 2250
+$Comp
+L power:+5V #PWR0101
+U 1 1 5C98B723
+P 4300 2150
+F 0 "#PWR0101" H 4300 2000 50  0001 C CNN
+F 1 "+5V" H 4315 2323 50  0000 C CNN
+F 2 "" H 4300 2150 50  0001 C CNN
+F 3 "" H 4300 2150 50  0001 C CNN
+	1    4300 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2250 4300 2150
+Text Label 3950 2250 0    50   ~ 0
+VCC
+Wire Wire Line
+	3200 2250 2700 2250
+Text Label 2950 2250 0    50   ~ 0
+GND
+Text Label 2800 2350 0    50   ~ 0
+POWER_SW
+Wire Wire Line
+	2800 2350 3200 2350
+Wire Wire Line
+	2700 2250 2700 2450
+$Comp
+L power:GND #PWR0102
+U 1 1 5C98C33B
+P 2700 2450
+F 0 "#PWR0102" H 2700 2200 50  0001 C CNN
+F 1 "GND" H 2705 2277 50  0000 C CNN
+F 2 "" H 2700 2450 50  0001 C CNN
+F 3 "" H 2700 2450 50  0001 C CNN
+	1    2700 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5C98C642
+P 2700 3250
+F 0 "R1" V 2600 3250 50  0000 C CNN
+F 1 "1kΩ" V 2700 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2630 3250 50  0001 C CNN
+F 3 "~" H 2700 3250 50  0001 C CNN
+	1    2700 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3600 2700 3600
+Wire Wire Line
+	2700 3400 2700 3600
+Connection ~ 2700 3600
+Text Label 2450 3600 0    50   ~ 0
+DATA
+$Comp
+L power:+5V #PWR0103
+U 1 1 5C99190B
+P 2700 3100
+F 0 "#PWR0103" H 2700 2950 50  0001 C CNN
+F 1 "+5V" H 2715 3273 50  0000 C CNN
+F 2 "" H 2700 3100 50  0001 C CNN
+F 3 "" H 2700 3100 50  0001 C CNN
+	1    2700 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3300 3600 3300
+$Comp
+L power:GND #PWR0104
+U 1 1 5C992122
+P 3500 3300
+F 0 "#PWR0104" H 3500 3050 50  0001 C CNN
+F 1 "GND" H 3505 3127 50  0000 C CNN
+F 2 "" H 3500 3300 50  0001 C CNN
+F 3 "" H 3500 3300 50  0001 C CNN
+	1    3500 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3400 3600 3400
+Wire Wire Line
+	3600 3400 3600 3300
+Connection ~ 3600 3300
+Wire Wire Line
+	3600 3300 3650 3300
+$Comp
+L power:GND #PWR0105
+U 1 1 5C993D22
+P 5450 3300
+F 0 "#PWR0105" H 5450 3050 50  0001 C CNN
+F 1 "GND" H 5455 3127 50  0000 C CNN
+F 2 "" H 5450 3300 50  0001 C CNN
+F 3 "" H 5450 3300 50  0001 C CNN
+	1    5450 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3200 5450 3200
+Wire Wire Line
+	5450 3200 5450 3300
+Wire Wire Line
+	5050 3400 5250 3400
+$Comp
+L power:+5V #PWR0106
+U 1 1 5C9951F4
+P 5250 3350
+F 0 "#PWR0106" H 5250 3200 50  0001 C CNN
+F 1 "+5V" H 5150 3350 50  0000 C CNN
+F 2 "" H 5250 3350 50  0001 C CNN
+F 3 "" H 5250 3350 50  0001 C CNN
+	1    5250 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3350 5250 3400
+Wire Wire Line
+	6300 2150 6650 2150
+Wire Wire Line
+	6300 2350 6650 2350
+Text Label 5350 2250 0    50   ~ 0
+VCC
+Text Label 6350 2150 0    50   ~ 0
+CLOCK
+Text Label 6350 2250 0    50   ~ 0
+GND
+Text Label 6350 2350 0    50   ~ 0
+DATA
+Wire Wire Line
+	3650 3500 3050 3500
+Wire Wire Line
+	2700 3600 3650 3600
+Wire Wire Line
+	3050 3400 3050 3500
+$Comp
+L Device:R R2
+U 1 1 5C99B99A
+P 3050 3250
+F 0 "R2" V 2950 3250 50  0000 C CNN
+F 1 "1kΩ" V 3050 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2980 3250 50  0001 C CNN
+F 3 "~" H 3050 3250 50  0001 C CNN
+	1    3050 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0107
+U 1 1 5C99C026
+P 3050 3100
+F 0 "#PWR0107" H 3050 2950 50  0001 C CNN
+F 1 "+5V" H 3065 3273 50  0000 C CNN
+F 2 "" H 3050 3100 50  0001 C CNN
+F 3 "" H 3050 3100 50  0001 C CNN
+	1    3050 3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 3050 3500
+Wire Wire Line
+	2750 3500 3050 3500
+Text Label 2750 3500 0    50   ~ 0
+CLOCK
+$Comp
+L power:+5V #PWR0108
+U 1 1 5C99E2C1
+P 5200 2150
+F 0 "#PWR0108" H 5200 2000 50  0001 C CNN
+F 1 "+5V" H 5215 2323 50  0000 C CNN
+F 2 "" H 5200 2150 50  0001 C CNN
+F 3 "" H 5200 2150 50  0001 C CNN
+	1    5200 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2250 5200 2150
+Wire Wire Line
+	5200 2250 5600 2250
+Wire Wire Line
+	6750 2250 6750 2450
+Wire Wire Line
+	6300 2250 6750 2250
+$Comp
+L power:GND #PWR0109
+U 1 1 5C99F344
+P 6750 2450
+F 0 "#PWR0109" H 6750 2200 50  0001 C CNN
+F 1 "GND" H 6755 2277 50  0000 C CNN
+F 2 "" H 6750 2450 50  0001 C CNN
+F 3 "" H 6750 2450 50  0001 C CNN
+	1    6750 2450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5600 2150
+NoConn ~ 5600 2350
+NoConn ~ 10050 4450
+$Comp
+L Connector:Mini-DIN-4_Shielded J1
+U 1 1 5C9B66F3
+P 3550 2350
+F 0 "J1" H 3550 2027 50  0000 C CNN
+F 1 "Mini-DIN-4_Shielded" H 3550 1936 50  0000 C CNN
+F 2 "Connector_Mini-DIN:Mini-Din-4_CUI_MD-40FC" H 3550 2350 50  0001 C CNN
+F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" H 3550 2350 50  0001 C CNN
+	1    3550 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Mini-DIN-6_Shielded J2
+U 1 1 5C9BC575
+P 5950 2250
+F 0 "J2" H 5950 1927 50  0000 C CNN
+F 1 "Mini-DIN-6_Shielded" H 5950 1836 50  0000 C CNN
+F 2 "Connector_Mini-DIN:Mini-Din-6_CUI_MD-60FC" H 5950 2250 50  0001 C CNN
+F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" H 5950 2250 50  0001 C CNN
+	1    5950 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2000 3550 1900
+Wire Wire Line
+	3550 1900 2700 1900
+Wire Wire Line
+	2700 1900 2700 2250
+Connection ~ 2700 2250
+Wire Wire Line
+	5950 1900 5950 1800
+Wire Wire Line
+	5950 1800 6750 1800
+Wire Wire Line
+	6750 1800 6750 2250
+Connection ~ 6750 2250
+$EndSCHEMATC

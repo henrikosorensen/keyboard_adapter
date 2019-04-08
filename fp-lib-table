@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name promicro)(type KiCad)(uri /Users/troldrik/OneDrive/KiCAD/Footprints/promicro.pretty)(options "")(descr ""))
+  (lib (name Connector_DIN)(type KiCad)(uri /Users/troldrik/OneDrive/KiCAD/Footprints/Connector_DIN.pretty)(options "")(descr ""))
+  (lib (name Connector_Mini-DIN)(type KiCad)(uri /Users/troldrik/OneDrive/KiCAD/Footprints/Connector_Mini-DIN.pretty)(options "")(descr ""))
+)
